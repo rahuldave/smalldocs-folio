@@ -1,6 +1,6 @@
 [project]
 name = "smalldocs-folio"
-version = "0.1.0"
+version = "0.2.0"
 description = "Folio: a light and dark theme for SmallDocs and Quarto"
 requires-python = ">=3.11"
 dependencies = ["smalldocs>=0.3.1"]

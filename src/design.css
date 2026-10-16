@@ -1,7 +1,7 @@
-html .quarto-title-block { border-bottom: 1px solid var(--e-line); padding-bottom: 1.5rem; }
-html .quarto-title h1.title { font-size: clamp(3.3rem, 5vw, 4.4rem); line-height: .99; letter-spacing: -.025em; }
+html .quarto-title-block { border-bottom: 1px solid var(--e-line); padding-bottom: 1.2rem; }
+html .quarto-title h1.title { font-size: clamp(2rem, 3.3vw, 2.6rem); line-height: 1.08; letter-spacing: -.025em; }
 html .navbar-title { font-size: 2rem; }
-html main.content h2 { font-size: 2.3rem; }
+html main.content h2 { font-size: 1.5rem; }
 html .quarto-title .subtitle { max-width: 44ch; }
 html .quarto-title::before { content: "FIELD NOTES / SMALLDOCS"; display: block; font: 500 .6rem var(--bs-font-sans-serif); letter-spacing: .16em; color: var(--e-secondary); margin-bottom: 1.3rem; }
-@media (max-width:575.98px) { html .quarto-title h1.title { font-size: 3rem; } }
+@media (max-width:575.98px) { html .quarto-title h1.title { font-size: 2rem; } }
