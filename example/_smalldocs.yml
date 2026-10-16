@@ -1,0 +1,42 @@
+project:
+  type: website
+website:
+  title: Folio
+  description: Cream paper, forest green, and expressive Caslon. A quieter cousin
+    of the CRBooks catalog.
+  site-url: https://rahuldave.com/smalldocs-folio/
+  repo-url: https://github.com/rahuldave/smalldocs-folio
+  page-navigation: true
+  navbar:
+    left:
+    - href: index.qmd
+      text: Overview
+    - href: pages/typography.qmd
+      text: Typography
+    - href: pages/code.qmd
+      text: Code & data
+    - href: notes/index.qmd
+      text: Notes
+    tools:
+    - icon: github
+      href: https://github.com/rahuldave/smalldocs-folio
+  sidebar:
+    style: floating
+    contents:
+    - section: The notebook
+      contents:
+      - index.qmd
+      - pages/typography.qmd
+      - pages/code.qmd
+      - pages/figures.qmd
+    - section: In practice
+      contents:
+      - pages/install.qmd
+      - notes/index.qmd
+  page-footer:
+    left: "Folio \xB7 A SmallDocs theme"
+    right: Made with [SmallDocs](https://github.com/rahuldave/smalldocs)
+theme: folio
+toc: true
+code-copy: true
+include-after-body: color-mode.html

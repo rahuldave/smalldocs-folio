@@ -1,0 +1,55 @@
+---
+title: Make it your own
+subtitle: The Folio theme, installed the same way as the Tufte theme.
+---
+
+## Add the theme
+
+```sh
+smalldocs add rahuldave/smalldocs-folio
+```
+
+The command installs `_extensions/folio/`, with both modes and local fonts.
+
+## Choose it
+
+In `_smalldocs.yml`:
+
+```yaml
+theme: folio
+toc: true
+code-copy: true
+```
+
+For a `_quarto.yml` built by SmallDocs, put `theme: folio` under `smalldocs:`.
+The normal SmallDocs navigation control switches between the two color modes.
+
+## With Quarto
+
+```sh
+quarto add rahuldave/smalldocs-folio
+```
+
+```yaml
+format:
+  folio-html:
+    toc: true
+```
+
+## Editable sources
+
+The [repository](https://github.com/rahuldave/smalldocs-folio) contains the full
+theme source in `src/`, font files and Bootstrap in `vendor/`, the build scripts,
+tests, and these example pages. Run `sh scripts/build.sh` to rebuild the CSS and
+Quarto Sass. The compiled files in `_extensions/folio/` are committed too, so
+installing the theme needs no CSS compiler.
+
+## The design
+
+Cream paper, forest green, and expressive Caslon. A quieter cousin of the CRBooks catalog.
+
+All code uses IBM Plex Mono, bundled with the theme. The source and examples
+have an MIT license; the fonts retain their SIL Open Font License notices.
+
+Folio takes its Caslon headings, cream paper, forest green, and rust accents
+from the [CRBooks catalog](https://rahuldave.com/crbooks/).

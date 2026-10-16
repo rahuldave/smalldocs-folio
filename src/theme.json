@@ -1,0 +1,35 @@
+{
+  "name": "folio",
+  "title": "Folio",
+  "number": "01",
+  "tagline": "The reading room",
+  "description": "Cream paper, forest green, and expressive Caslon. A quieter cousin of the CRBooks catalog.",
+  "heading": "\"Libre Caslon Display\", Georgia, serif",
+  "body": "\"Source Serif 4\", Georgia, serif",
+  "fonts": [
+    "DM Sans",
+    "IBM Plex Mono",
+    "Libre Caslon Display",
+    "Source Serif 4"
+  ],
+  "light": {
+    "paper": "#f8f4eb",
+    "ink": "#25372d",
+    "muted": "#5f6b62",
+    "panel": "#efe9dc",
+    "line": "#d4d6c7",
+    "accent": "#254f38",
+    "secondary": "#9d442b",
+    "code": "#eee9de"
+  },
+  "dark": {
+    "paper": "#14271e",
+    "ink": "#eeeadd",
+    "muted": "#afbeb0",
+    "panel": "#1d3327",
+    "line": "#405548",
+    "accent": "#c3d5a4",
+    "secondary": "#e7ad80",
+    "code": "#1b3024"
+  }
+}
