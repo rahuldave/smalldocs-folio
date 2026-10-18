@@ -53,3 +53,33 @@ have an MIT license; the fonts retain their SIL Open Font License notices.
 
 Folio takes its Caslon headings, cream paper, forest green, and rust accents
 from the [CRBooks catalog](https://rahuldave.com/crbooks/).
+
+## Optional title label
+
+The current theme does not add a fixed label above your title. To restore that
+effect, create `styles.css` in your site folder and add it to `_smalldocs.yml`:
+
+```yaml
+theme: folio
+css: styles.css
+```
+
+Put this rule in `styles.css`, and change the quoted label to suit your site:
+
+```css
+html .quarto-title::before {
+  content: "FIELD NOTES / SMALLDOCS";
+  display: block;
+  font: 500 .6rem var(--bs-font-sans-serif);
+  letter-spacing: .16em;
+  color: var(--e-secondary);
+  margin-bottom: 1.3rem;
+}
+```
+
+The rule adds the same decorative text above every title. For text that changes
+with the page, use its content or `subtitle:` in its front matter. Remove the CSS
+rule to turn the label off.
+
+The [theme handbook](https://rahuldave.com/elegant-themes/theme-guide.html#folio) describes
+this theme and shows how to connect your stylesheet with SmallDocs and Quarto.

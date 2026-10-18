@@ -13,9 +13,14 @@ theme with light and dark modes, bundled fonts, and a corresponding Quarto exten
 
 Folio draws on the [CRBooks catalog](https://rahuldave.com/crbooks/): its Caslon headings, forest green, cream paper, and rust accents. Long prose uses Source Serif 4.
 
+The screenshots show `v0.2.0`, including its earlier title label. Current builds
+omit that label by default; the handbook below shows how to restore it.
+
 Code uses **IBM Plex Mono** in both modes. Fonts ship with the extension; the theme
 makes no requests to an external font service. The reading column is 640px wide,
 with smaller navigation and a compact table of contents.
+
+[Theme handbook and optional effects](https://rahuldave.com/elegant-themes/theme-guide.html#folio)
 
 ## With SmallDocs
 
@@ -44,12 +49,13 @@ Installing the theme requires no Sass compiler or font downloads.
 
 ## Update or choose a version
 
-The reading refinement is **0.2.0** and keeps the configuration name `folio`.
+The reading refinement began with **0.2.0** and keeps the configuration name `folio`.
+The current default branch removes the fixed label above every page title.
 SmallDocs copies an extension into your project; it does not update that copy automatically.
-To replace an older installation with the refined release:
+To replace an older installation with the current theme:
 
 ```sh
-smalldocs add rahuldave/smalldocs-folio@v0.2.0 --force
+smalldocs add rahuldave/smalldocs-folio --force
 smalldocs render
 ```
 
@@ -57,7 +63,8 @@ Keep `theme: folio`. `--force` replaces `_extensions/folio/`; keep local theme c
 in your site's own stylesheet before updating. Commit the installed extension with your site.
 `smalldocs themes` shows the installed source and commit.
 
-Leave out `@v0.2.0` to install the newest default-branch commit. To restore the original:
+Add `@v0.2.0` to pin the reading refinement before the label cleanup.
+That release and the original snapshot still contain the fixed label. To restore the original:
 
 ```sh
 smalldocs add rahuldave/smalldocs-folio@before-reading-redesign-2026-10-16 --force
@@ -80,6 +87,13 @@ format:
 
 Quarto uses layered Sass and embeds the fonts as data URIs. Its theme follows the
 browser's color preference and supports Quarto's light/dark toggle.
+
+## Optional title label
+
+The theme leaves title text to your page. To restore the earlier decorative label,
+follow the [stylesheet recipe in the theme handbook](https://rahuldave.com/elegant-themes/theme-guide.html#folio).
+Keep the rule in your own `styles.css` so a theme update preserves your choice.
+The [example installation page](example/pages/install.qmd#optional-title-label) also includes the recipe.
 
 ## Editable sources and builds
 
