@@ -4,18 +4,18 @@
   "number": "01",
   "tagline": "The reading room",
   "description": "Cream paper, forest green, and expressive Caslon. A quieter cousin of the CRBooks catalog.",
-  "heading": "\"Libre Caslon Display\", Georgia, serif",
-  "body": "\"Source Serif 4\", Georgia, serif",
   "fonts": [
     "DM Sans",
     "IBM Plex Mono",
     "Libre Caslon Display",
     "Source Serif 4"
   ],
+  "body": "\"Source Serif 4\", Georgia, serif",
+  "heading": "\"Source Serif 4\",Georgia,serif",
   "light": {
     "paper": "#f8f4eb",
     "ink": "#25372d",
-    "muted": "#5f6b62",
+    "muted": "#5a655d",
     "panel": "#efe9dc",
     "line": "#d4d6c7",
     "accent": "#254f38",

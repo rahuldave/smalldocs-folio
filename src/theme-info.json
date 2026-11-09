@@ -1,0 +1,13 @@
+{
+  "name": "folio",
+  "title": "Folio",
+  "number": "01",
+  "tagline": "The reading room",
+  "description": "Cream paper, forest green, and expressive Caslon. A quieter cousin of the CRBooks catalog.",
+  "fonts": [
+    "DM Sans",
+    "IBM Plex Mono",
+    "Libre Caslon Display",
+    "Source Serif 4"
+  ]
+}
