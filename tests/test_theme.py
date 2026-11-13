@@ -111,3 +111,10 @@ def test_local_code_font(name):
     assert "IBM Plex Mono" in css
     assert "font-display: swap" in css
     assert "fonts/ibm-plex-mono-400-normal.ttf" in css
+
+
+@pytest.mark.parametrize("name", FILES)
+def test_toc_links_wrap(name):
+    "A long name with no spaces, such as DRAFT_SAFETY_NO_AUTHORITY_EXPANSION, wraps in the narrow TOC column."
+    for selector in ("html #TOC .nav-link", "html main.content > #TOC a", "html #TOC-body a", "html .quarto-listing-category .category"):
+        assert any(selector in sels and "overflow-wrap:anywhere" in body.replace(" ", "") for sels, body in rules(read(name))), selector
